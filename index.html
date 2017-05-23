@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Nash Singh- Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	</head>
+	<body>
+		<header id="navigation">
+			<nav>		<!-- ADD OTHER LINKS TO NAVIGATION -->
+				<h3>Nash Singh</h3>
+				<ul>
+					<li><a href="#home" >Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="wrapper">
+		<!-- HOME SECTION CTA -->
+		<section id="home">
+			<h1>Nash Singh</h1>
+		</section>
+		<!-- ABOUT SECTION -->
+		<section id="about">
+			<h2>About</h2>
+			<p>He’s an avid admirer of entropy, a visionary without a vision, a deep thinker with superficial thoughts, an optimistic nihilist, and a self-proclaimed philosopher who rarely leaves his comfy armchair. He worships good music on pitch-perfect audio systems and prays only to the goddess Caffeina.</p>
+
+			<p>For the past couple of years, he wanders freely in the realm of advertising and visual communication. He loves complex phrases, intricate patterns, difficult concepts, confusing abstractions, but as a rule of thumb, always constructs simple solutions to each problems he encountered. Free of any particular style, movement, dogma or perspective, nothing excites him than a problem to solve, and no challenge to him is ever hard enough.</p>
+		</section>
+		<!-- PROJECTS SECTION -->
+		<section id="projects">
+			<h2>Projects</h2>
+				<!-- list of projects -->
+				<!-- image link opens up large image + description -->
+				<ul id="project-list">
+					<!--  notifications lab -->
+					<li>
+						<div class="thumb">
+							<a href="projects/notifications/index.html"><img src="images/notifications.png" alt="notifications lab" /></a>
+							<p id="firstproj" class="text">The goal of this project was to create a plugin that could be used to display notifications for various environments. It was made using jQuery, and it includes basic functions to create a blank &lt;div&gt; to overlay the page, style the notifications and then implement the messages themselves, and finally animate and display the whole component.</p>
+						</div>
+						
+					</li>
+					<!-- weather app lab -->
+					<li>
+						<div class="thumb">
+							<a href="http://ma-singh.bitbucket.org/practical-exam/practical.html"><img src="images/weather.png" alt="weather app lab" /></a>
+							<p class="text">This is a pseudo-weather app that I created as a final project for a practical exam. It utilizes the <a href="https://www.wunderground.com/weather/api/" id="wapi">Weather Underground API</a> to asynchronously load and display information about the current weather conditions in my hometown and an additional location.</p>
+						</div>
+					</li>
+					<!-- safari zone lab -->
+					<li>
+						<div class="thumb">
+							<a href="projects/safarizone/index.html"><img src="images/safarizone.png" alt="safari zone mock website" /></a>
+							<p class="text">The Safari Zone represents my first foray into the world of HTML5 structure, CSS styling, and responsive design. We were given free reign on the theme so long as we were able to create something with structure (navigation, headings, images, text, forms) styling it appropriately, and filling it with sufficient content that we could then have the page react responsively.</p>
+						</div>
+					</li>
+					<!-- IUS/EID lab -->
+					<li>
+						<div class="thumb">
+							<img src="images/happyhour.png" alt="happy hour app mobile screen" />
+							<p class="text">HappyHour was the result of a project where we were tasked to create mockups for an application you could see having potential use. I chose to design a social drinking application that would allow you to find either specific alcoholic beverages or popular locations serving alcohol nearby, meet up with friends, and review said beverages or locations.</p>
+						</div>
+					</li>
+				</ul>
+		</section>
+		<!-- TESTIMONIALS -->
+		<section id="feedback">
+			<h2>Testimonials</h2>
+			<p><em>"...He's got chops."</em> -Joe Cavagna</p>
+			<p><em>"I'd trust him with my code any day except Sunday."</em> - Kevin Imhoff</p>
+		</section>
+		<!-- CONTACT SECTION -->
+		<section id="contact">
+			<form action="mailto:masingh@fullsail.edu">
+				<h2>Contact Me</h2>
+				<fieldset>
+				<legend>Send a Message</legend>
+				<div id="formInfo">
+					<p><label for="name">Name: </label>
+							<input type="text" id="name" required="required" placeholder="John Smith" /></p>
+					<p><label for="email">E-mail: </label>
+							<input type="email" id="email" required="required" placeholder="mail@example.com" />
+							<label for="email" class="invalid"></label></p>
+				</div>
+				<div id="formText">
+					<p><label for="message" id="msgLabel">Enter Your Message: </label>
+							<textarea id="message" placeholder="Enter your comments here..."></textarea></p>
+				</div>
+				<p id="button"><input type="submit" name="Submit" id="submit" /></p>
+				</fieldset>
+			</form>
+		</section>
+	</div>
+		<!-- FOOTER -->
+		<footer><h3><a href="#home">Nash Singh<span> &copy 2016</span></a></h3></footer>
+
+		<!-- link to javascript file? -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,345 @@
+/* ===== CSS STYLES FOR PORTFOLIO ===== */
+html, body {
+	height: 100%;
+}
+
+#wrapper {
+	background: url("../images/imagegif.gif") no-repeat center fixed;
+	background-size: cover;
+	height: 100vh;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+	overflow: auto;
+	color: #fffbed;
+}
+
+h2 {
+	font: 3.0em 'Montserrat';
+	margin: 25px 20%;
+}
+
+h2:not(#about) {
+	margin-bottom: 50px;
+}
+
+img {
+	width: 100%;
+}
+
+/* === NAVIGATION === */
+header h3 {
+	text-transform: uppercase;
+	float: left;
+	font: 1.5em 'Montserrat', sans-serif;
+	line-height: 1.5em;
+	color: #fffbed;
+	margin: 1% 2%;
+}
+nav {
+	width: 100%;
+	overflow: hidden;
+	background-color: #333;
+}
+
+nav ul {
+	list-style-type: none;
+	float: right;
+	width: 30%;
+	margin: 1%;
+}
+
+nav li {
+	width: 25%;
+	float: left;
+}
+
+nav a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 0;
+	font-family: 'Raleway', sans-serif;
+	color: #fffbed;
+}
+
+nav a:hover {
+	background-color: #fffbed;
+	color: #333;
+	transition: 0.5s ease-in;
+}
+
+/* === BACKGROUND CTA === */
+#home {
+	overflow: hidden;
+	margin-bottom: 400px;
+}
+
+h1 {
+	text-align: right;
+	font: 5.0em 'Montserrat', sans-serif;
+	margin: 200px 5% 100px 0;
+}
+
+/* === ABOUT === */
+#about {
+	clear: both;
+	width: 75%;
+	margin: 0 auto 50px auto;
+	overflow: hidden;
+
+}
+
+p, legend {
+	font: 1.5em 'Raleway', sans-serif;
+	line-height: 1.5;
+	margin-top: 30px;
+}
+
+#about h2 {
+	margin-left: 0;
+	text-align: right;
+}
+
+#about p {
+	text-align: right;
+	float: right;
+	width: 80%;
+}
+
+/* === PROJECTS === */
+#projects {
+	clear: both;
+	width: 100%;
+	margin: 50px auto;
+}
+
+#project-list {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+#project-list li {
+	float: left;
+	width: 50%;
+	margin: 0;
+}
+
+#project-list p {
+	font-size: 1.3em;
+}
+
+#project-list img {
+	width: 100%;
+}
+
+.thumb {
+	position: relative;
+}
+
+.text, .text-js {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.thumb:hover .text {
+	display: block;
+}
+
+/* === TESTIMONIALS === */
+#feedback {
+	width: 75%;
+	margin: 50px auto;
+	clear: both;
+}
+
+#feedback em {
+	font-style: italic;
+}
+
+/* === FORM === */
+#contact {
+	width: 75%;
+	margin: auto;
+	clear: both;
+}
+
+form {
+	width: 100%;
+	overflow: hidden;
+}
+
+#formInfo {
+	float: left;
+	width: 100%;
+}
+
+#name, #email {
+	width: 45%;
+}
+
+#name, #email, #message {
+	padding-left: 1%;
+}
+
+#formText {
+	float: right;
+	width: 100%;
+}
+
+#message {
+	display: block;
+	width: 100%;
+	height: 200px;
+	resize: none;
+}
+
+#button {
+	clear: both;
+}
+
+#submit {
+	margin: 2% 0;
+	padding: 0 2%;
+	background-color: #fffbed;
+	color: #427478;
+	border-color: #427478;
+}
+
+#submit:hover {
+	background-color: #d79a64;
+	color: #fffbed;
+}
+
+#submit:active {
+	text-indent: 10px;
+}
+
+/* === FOOTER === */
+footer {
+	width: 100%;
+	background-color: #333;
+}
+
+footer h3 {
+	text-align: center;
+	font: 1.0em 'Montserrat', sans-serif;
+	line-height: 1.5em;
+	color: #555;
+	padding: 1% 0;
+}
+
+footer a {
+	color: #555;
+}
+
+footer a:hover {
+	color: #888;
+}
+
+footer span {
+	font-size: 0.7em;
+	line-height: 2.0em;
+}
+
+/* ============================================== */
+/* ============================================== */
+
+@media screen and (max-width: 900px) {
+	
+	/* === NAVIGATION === */
+	nav ul {
+		width: 65%;
+	}
+
+	nav li {
+		width: 25%;
+	}
+
+	nav a {
+		font-size: 1.3em;
+	}
+
+	header h3 {
+		font-size: 1.7em;
+		line-height: 1.8;
+	}
+
+	/* === ABOUT === */
+	#about h2 {
+		margin-bottom: 25px;
+	}
+
+	#about p {
+		margin-top: 15px;
+		width: 80%;
+	}
+	#project-list li {
+		width: 100%;
+	}
+
+	/* === FOOTER === */
+	#name, #email {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 615px) {
+
+	h2 {
+		text-align: center;
+		margin: auto;
+	}
+
+	h2, p {
+		text-shadow: 1px 1px #000;
+	}
+
+	/* === NAVIGATION === */
+	header h3 {
+		display: none;
+	}
+
+	nav ul {
+		width: 100%;
+	}
+
+	/* === CTA === */
+	h1 {
+		text-align: center;
+		margin-right: 0;
+	}
+
+	/* === ABOUT === */
+	#about {
+		width: 90%;
+	}
+
+	#about h2 {
+		text-align: center;
+	}
+
+	#about p {
+		text-align: left;
+		float: none;
+		margin: 15px auto;
+		width: 100%;
+		font-size: 1.8em;
+	}
+
+	/* === PROJECTS === */
+
+	#project-list p {
+		font-size: 1.0em;
+	}
+
+	/* === CONTACT === */
+
+	#contact h2 {
+		margin: 25px auto;
+	}
+
+	#name, #email {
+		width: 100%;
+	}
+}
