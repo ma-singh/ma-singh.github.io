@@ -14,7 +14,7 @@ html, body {
 
 h2 {
 	font: 3.0em 'Montserrat';
-	margin: 15% 2% 20%;
+	margin: 15% 2% 20% 0%;
 }
 
 h2:not(#about) {
