@@ -14,7 +14,7 @@ html, body {
 
 h2 {
 	font: 3.0em 'Montserrat';
-	margin: 25px 20%;
+	margin: 15% 2% 20%;
 }
 
 h2:not(#about) {
@@ -26,7 +26,7 @@ img {
 }
 
 /* === NAVIGATION === */
-header h3 {
+header h4 {
 	text-transform: uppercase;
 	float: left;
 	font: 1.5em 'Montserrat', sans-serif;
@@ -70,22 +70,43 @@ nav a:hover {
 /* === BACKGROUND CTA === */
 #home {
 	overflow: hidden;
-	margin-bottom: 400px;
+	margin-bottom: 40rem;
 }
 
 h1 {
 	text-align: right;
 	font: 5.0em 'Montserrat', sans-serif;
-	margin: 200px 5% 100px 0;
+	margin: 15rem 5% 0 0;
+}
+
+#home p {
+	float: right;
+	margin-right: 5rem;
+}
+
+#home em {
+	font-style: italic;
+	color: #888;
+	text-shadow: 1px 1px black;
+}
+
+#home a {
+	color: #fffbed;
+}
+
+#home a:hover {
+	color: #ddd;
+	text-shadow: 1px 1px 0.5rem #eee;
 }
 
 /* === ABOUT === */
 #about {
 	clear: both;
-	width: 75%;
-	margin: 0 auto 50px auto;
+	width: 100%;
+	margin: 5rem 0rem 20rem auto;
+	padding: 0 5rem 5rem 0;
 	overflow: hidden;
-
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 p, legend {
@@ -95,14 +116,16 @@ p, legend {
 }
 
 #about h2 {
-	margin-left: 0;
-	text-align: right;
+	margin: 5rem 0rem 0rem 0rem;
+	text-align: left;
+	width: 60%;
+	float: right;
 }
 
 #about p {
-	text-align: right;
+	text-align: left;
 	float: right;
-	width: 80%;
+	width: 60%;
 }
 
 /* === PROJECTS === */
@@ -115,41 +138,68 @@ p, legend {
 #project-list {
 	list-style-type: none;
 	overflow: hidden;
+	display: flex;
+	width: 100%;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 #project-list li {
 	float: left;
-	width: 50%;
+	width: 33%;
 	margin: 0;
 }
 
+.thumb h3 {
+	width: 75%;
+	text-align: center;
+	font: 1.5em 'Montserrat';
+	margin: 2.0rem auto 1.5rem;
+	border-bottom: 0.1rem solid #fffbed;
+}
+
 #project-list p {
-	font-size: 1.3em;
+	font-size: 1em;
 }
 
 #project-list img {
+	display: block;
 	width: 100%;
+	height: auto;
 }
 
 .thumb {
 	position: relative;
 }
 
-.text, .text-js {
-	display: none;
+.overlay {
 	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.5);
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transition: 0.5s ease;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
-.thumb:hover .text {
+.text {
+	position: absolute;
+	padding: 2rem;
+	margin-top: -3rem;
+}
+
+.thumb:hover .overlay {
 	display: block;
+	opacity: 1;
 }
 
 /* === TESTIMONIALS === */
 #feedback {
 	width: 75%;
-	margin: 50px auto;
+	margin: 25% auto;
 	clear: both;
 }
 
@@ -158,24 +208,39 @@ p, legend {
 }
 
 /* === FORM === */
-#contact {
-	width: 75%;
-	margin: auto;
+#contact-wrapper {
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow: hidden;
 	clear: both;
+}
+
+#contact {
+	width: 60%;
+	float: left;
+}
+
+#contact-wrapper h2 {
+	text-align: center;
+	margin-top: 3%;
 }
 
 form {
 	width: 100%;
 	overflow: hidden;
+	margin-left: 5rem;
 }
 
 #formInfo {
 	float: left;
-	width: 100%;
+	width: 55%;
+}
+
+#contact p {
+	margin-top: 0.5rem;
 }
 
 #name, #email {
-	width: 45%;
+	width: 100%;
 }
 
 #name, #email, #message {
@@ -183,8 +248,8 @@ form {
 }
 
 #formText {
-	float: right;
-	width: 100%;
+	float: left;
+	width: 55%;
 }
 
 #message {
@@ -213,6 +278,34 @@ form {
 
 #submit:active {
 	text-indent: 10px;
+}
+
+/* === SOCIAL LINKS === */
+
+#social-links {
+	width: 25%;
+	float: left;
+	margin-top: 4rem;
+	margin-right: 5rem;
+}
+
+#social-links img {
+	width: 3rem;
+	margin: 0 1rem;
+	position: relative;
+	top: 0.3rem;
+}
+
+#social-links p {
+	font-size: 3.0em;
+}
+
+#social-links a {
+	color: #fffbed;
+}
+
+#social-links a:hover {
+	color: #888;
 }
 
 /* === FOOTER === */
@@ -246,7 +339,7 @@ footer span {
 /* ============================================== */
 
 @media screen and (max-width: 900px) {
-	
+
 	/* === NAVIGATION === */
 	nav ul {
 		width: 65%;

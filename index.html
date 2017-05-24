@@ -10,7 +10,7 @@
 	<body>
 		<header id="navigation">
 			<nav>		<!-- ADD OTHER LINKS TO NAVIGATION -->
-				<h3>Nash Singh</h3>
+				<h4>Nash Singh</h4>
 				<ul>
 					<li><a href="#home" >Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -23,6 +23,7 @@
 		<!-- HOME SECTION CTA -->
 		<section id="home">
 			<h1>Nash Singh</h1>
+			<p><em>Full Stack Developer</em> / <a href="#contact">Collaborate with me</a></p>
 		</section>
 		<!-- ABOUT SECTION -->
 		<section id="about">
@@ -41,29 +42,60 @@
 					<li>
 						<div class="thumb">
 							<a href="projects/notifications/index.html"><img src="images/notifications.png" alt="notifications lab" /></a>
-							<p id="firstproj" class="text">The goal of this project was to create a plugin that could be used to display notifications for various environments. It was made using jQuery, and it includes basic functions to create a blank &lt;div&gt; to overlay the page, style the notifications and then implement the messages themselves, and finally animate and display the whole component.</p>
+							<div class="overlay">
+								<h3>Notifications</h3>
+								<p id="firstproj" class="text">The goal of this project was to create a plugin that could be used to display notifications for various environments. It was made using jQuery, and it includes basic functions to create a blank &lt;div&gt; to overlay the page, style the notifications and then implement the messages themselves, and finally animate and display the whole component.</p>
+							</div>
 						</div>
-						
 					</li>
 					<!-- weather app lab -->
 					<li>
 						<div class="thumb">
 							<a href="http://ma-singh.bitbucket.org/practical-exam/practical.html"><img src="images/weather.png" alt="weather app lab" /></a>
-							<p class="text">This is a pseudo-weather app that I created as a final project for a practical exam. It utilizes the <a href="https://www.wunderground.com/weather/api/" id="wapi">Weather Underground API</a> to asynchronously load and display information about the current weather conditions in my hometown and an additional location.</p>
+							<div class="overlay">
+								<h3>Weather App</h3>
+								<p class="text">This is a pseudo-weather app that I created as a final project for a practical exam. It utilizes the <a href="https://www.wunderground.com/weather/api/" id="wapi">Weather Underground API</a> to asynchronously load and display information about the current weather conditions in my hometown and an additional location.</p>
+							</div>
 						</div>
 					</li>
 					<!-- safari zone lab -->
 					<li>
 						<div class="thumb">
 							<a href="projects/safarizone/index.html"><img src="images/safarizone.png" alt="safari zone mock website" /></a>
-							<p class="text">The Safari Zone represents my first foray into the world of HTML5 structure, CSS styling, and responsive design. We were given free reign on the theme so long as we were able to create something with structure (navigation, headings, images, text, forms) styling it appropriately, and filling it with sufficient content that we could then have the page react responsively.</p>
+							<div class="overlay">
+								<h3>The Safari Zone</h3>
+								<p class="text">The Safari Zone represents my first foray into the world of HTML5 structure, CSS styling, and responsive design. We were given free reign on the theme so long as we were able to create something with structure (navigation, headings, images, text, forms) styling it appropriately, and filling it with sufficient content that we could then have the page react responsively.</p>
+							</div>
 						</div>
 					</li>
 					<!-- IUS/EID lab -->
 					<li>
 						<div class="thumb">
 							<img src="images/happyhour.png" alt="happy hour app mobile screen" />
-							<p class="text">HappyHour was the result of a project where we were tasked to create mockups for an application you could see having potential use. I chose to design a social drinking application that would allow you to find either specific alcoholic beverages or popular locations serving alcohol nearby, meet up with friends, and review said beverages or locations.</p>
+							<div class="overlay">
+								<h3>HappyHour</h3>
+								<p class="text">HappyHour was the result of a project where we were tasked to create mockups for an application you could see having potential use. I chose to design a social drinking application that would allow you to find either specific alcoholic beverages or popular locations serving alcohol nearby, meet up with friends, and review said beverages or locations.</p>
+							</div>
+						</div>
+					</li>
+					<!-- WOW API Tool -->
+					<li>
+						<div class="thumb">
+							<img src="images/wow-tool.png" alt="tool created using world of warcraft API" />
+							<div class="overlay">
+								<h3>World of Warcraft Tool</h3>
+								<p class="text">For this project we were tasked with utilizing an existing API to accomplish a task. I took Blizzard's API for World of Warcraft to pull character and auction house data from a given realm and display what the quantity, average, and prices for a selection of items were being sold for. This was created with HTML5, JavaScript, jQuery, and CSS3.</p>
+							</div>
+						</div>
+					</li>
+					<!-- NodeJs E-Commerce Shopping Cart -->
+					<li>
+						<div class="thumb">
+							<img src="images/shoppingcart.png" alt="e-commerce shopping cart project" />
+							<div class="overlay">
+								<h3>interNASHional E-Commerce</h3>
+								<p class="text">interNASHional E-Commerce is an application designed to simulate a shopping cart type application that allows users to purchase comic books, with an Admin CMS to manage inventory. It uses NodeJS, Express. The Stripe API takes care of simulating payments, while PassportJS handles user authenticatio. MongoDB and Mongoose are used to manage the database.</p>
+							</div>
 						</div>
 					</li>
 				</ul>
@@ -71,30 +103,38 @@
 		<!-- TESTIMONIALS -->
 		<section id="feedback">
 			<h2>Testimonials</h2>
-			<p><em>"...He's got chops."</em> -Joe Cavagna</p>
+			<p><em>"...He's got chops."</em> - Joe Cavagna</p>
 			<p><em>"I'd trust him with my code any day except Sunday."</em> - Kevin Imhoff</p>
+			<p><em>"*complete silence*"</em> - Brad Beltowski</p>
 		</section>
 		<!-- CONTACT SECTION -->
-		<section id="contact">
-			<form action="mailto:masingh@fullsail.edu">
-				<h2>Contact Me</h2>
-				<fieldset>
-				<legend>Send a Message</legend>
-				<div id="formInfo">
-					<p><label for="name">Name: </label>
-							<input type="text" id="name" required="required" placeholder="John Smith" /></p>
-					<p><label for="email">E-mail: </label>
-							<input type="email" id="email" required="required" placeholder="mail@example.com" />
-							<label for="email" class="invalid"></label></p>
-				</div>
-				<div id="formText">
-					<p><label for="message" id="msgLabel">Enter Your Message: </label>
-							<textarea id="message" placeholder="Enter your comments here..."></textarea></p>
-				</div>
-				<p id="button"><input type="submit" name="Submit" id="submit" /></p>
-				</fieldset>
-			</form>
-		</section>
+		<div id="contact-wrapper">
+			<h2>Contact Me</h2>
+			<section id="contact">
+				<form action="mailto:masingh@fullsail.edu">
+					<fieldset>
+					<legend>Send a Message</legend>
+					<div id="formInfo">
+						<p><label for="name">Name: </label>
+								<input type="text" id="name" required="required" placeholder="John Smith" /></p>
+						<p><label for="email">E-mail: </label>
+								<input type="email" id="email" required="required" placeholder="mail@example.com" />
+								<label for="email" class="invalid"></label></p>
+					</div>
+					<div id="formText">
+						<p><label for="message" id="msgLabel">Enter Your Message: </label>
+								<textarea id="message" placeholder="Enter your comments here..."></textarea></p>
+					</div>
+					<p id="button"><input type="submit" name="Submit" id="submit" /></p>
+					</fieldset>
+				</form>
+			</section>
+			<section id="social-links">
+				<p><a href="http://ma-singh.github.com"><img src="images/gh-logo.svg" /> GitHub</a></p>
+				<p><a href="https://www.linkedin.com/in/nash-singh/"><img src="images/linkedin.svg" /> LinkedIn</a></p>
+				<p><a href="https://twitter.com/fs.masingh"><img src="images/twitter_icon.svg" /> Twitter</a></p>
+			</section>
+	</div>
 	</div>
 		<!-- FOOTER -->
 		<footer><h3><a href="#home">Nash Singh<span> &copy 2016</span></a></h3></footer>
