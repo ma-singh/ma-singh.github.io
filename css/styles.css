@@ -203,6 +203,10 @@ p, legend {
 	clear: both;
 }
 
+#feedback h2{
+	margin-left: 0;
+}
+
 #feedback em {
 	font-style: italic;
 }
