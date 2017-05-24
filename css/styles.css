@@ -14,7 +14,7 @@ html, body {
 
 h2 {
 	font: 3.0em 'Montserrat';
-	margin: 15% 2% 20% 0%;
+	margin: 15% 2% 20%;
 }
 
 h2:not(#about) {
@@ -201,6 +201,10 @@ p, legend {
 	width: 75%;
 	margin: 25% auto;
 	clear: both;
+}
+
+#feedback h2{
+	margin-left: 0;
 }
 
 #feedback em {
