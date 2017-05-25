@@ -127,11 +127,28 @@ p, legend {
 	width: 60%;
 }
 
+#portrait {
+	background: url('../images/about.png');
+	width: 300px;
+	height: 656px;
+	box-shadow:
+		inset 0 0 5rem #000,
+		inset 0 0 5rem #000,
+		inset 0 0 5rem #000;
+	border: 0.05rem solid #fff;
+	margin: 5rem 0 0 7rem;
+}
+
+
 /* === PROJECTS === */
 #projects {
 	clear: both;
 	width: 100%;
 	margin: 50px auto;
+}
+
+#projects h2 {
+	padding-top: 2rem;
 }
 
 #project-list {
@@ -164,7 +181,40 @@ p, legend {
 #project-list img {
 	display: block;
 	width: 100%;
-	height: auto;
+}
+
+.live-link {
+	position: absolute;
+	bottom: 0.75rem;
+	right: 4rem;
+	color: #fffbed;
+}
+
+.gh-link {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+}
+
+#safari .live-link, #happyhour .live-link {
+	right: 1rem;
+}
+
+.live-link:hover, .gh-link:hover {
+	color: #fcb358;
+	text-shadow: 0 0 2rem #fcb358;
+}
+
+#project-list img.project-link {
+	bottom: 0;
+	right: -3rem;
+	height: 2rem;
+	width: auto;
+	margin: 0rem 0rem;
+}
+
+i.link {
+	font-size: 2.5rem;
 }
 
 .thumb {
@@ -364,6 +414,99 @@ footer span {
 	.text {
 		font-size: 0.9em;
 	}
+
+	.live-link {
+		right: 3rem;
+	}
+
+	i.link {
+		font-size: 1.5rem;
+	}
+
+	.gh-link {
+		bottom: 0.5rem;
+		right: 0.5rem;
+	}
+
+	#project-list img.project-link {
+		width: 1.5rem;
+	}
+}
+
+/* ============================================== */
+/* ============================================== */
+
+@media screen and (max-width: 1260px) {
+	/* === PROJECTS === */
+	#project-list p {
+		font-size: 0.9em;
+	}
+}
+
+/* ============================================== */
+/* ============================================== */
+
+@media screen and (max-width: 1150px) {
+	/* === ABOUT === */
+	#portrait {
+		margin-left: 3rem;
+	}
+
+	/* === PROJECTS === */
+	.thumb h3 {
+		font-size: 0.85em;
+	}
+
+	#project-list p {
+		font-size: 0.8em;
+	}
+
+	/* === SOCIAL LINKS === */
+	#social-links {
+		width: 30%;
+	}
+}
+
+/* ============================================== */
+/* ============================================== */
+
+@media screen and (max-width: 1040px) {
+	/* === ABOUT === */
+	#portrait {
+		margin-left: 2.5rem;
+	}
+
+	/* === PROJECTS === */
+	#project-list li {
+		width: 50%;
+	}
+
+	.thumb h3 {
+		margin-top: 0.95rem;
+		font-size: 1.5rem;
+	}
+
+	#project-list p {
+		font-size: 1.25rem;
+	}
+}
+
+/* ============================================== */
+/* ============================================== */
+
+@media screen and (max-width: 1040px) {
+	/* === ABOUT === */
+	#about {
+		padding-right: 2rem;
+	}
+
+	#portrait {
+		margin-left: 2.0rem;
+	}
+	/* === PROJECTS === */
+	#project-list p {
+		font-size: 1rem;
+	}
 }
 
 /* ============================================== */
@@ -392,14 +535,60 @@ footer span {
 	/* === ABOUT === */
 	#about h2 {
 		margin-bottom: 25px;
+		width: 55%;
 	}
 
 	#about p {
 		margin-top: 15px;
-		width: 80%;
+		width: 55%;
 	}
+
+	/* === PROJECTS === */
 	#project-list li {
 		width: 100%;
+	}
+
+	.thumb h3 {
+		margin-top: 0.95rem;
+		font-size: 2.5rem;
+	}
+
+	#project-list p {
+		font-size: 1.75rem;
+	}
+
+	.text {
+		margin-top: -2rem;
+	}
+
+	/* === CONTACT === */
+	#contact {
+		width: 100%;
+	}
+
+	#formInfo {
+		width: 80%;
+	}
+
+	#formText {
+		width: 80%;
+	}
+
+	/* === SOCIAL LINKS === */
+	#social-links {
+		margin: 1.5rem 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#social-links p {
+		margin-top: 0;
+		font-size: 2em;
+	}
+
+	#social-links img {
+		width: 2rem;
 	}
 
 	/* === FOOTER === */
@@ -423,7 +612,7 @@ footer span {
 	}
 
 	/* === NAVIGATION === */
-	header h3 {
+	header h4 {
 		display: none;
 	}
 
@@ -432,18 +621,33 @@ footer span {
 	}
 
 	/* === CTA === */
+	#home {
+		margin-bottom: 20rem;
+	}
 	h1 {
 		text-align: center;
+		margin-top: 10rem;
 		margin-right: 0;
+	}
+
+	#home p {
+		text-align: center;
+		font-size: 1.05em;
+		float: none;
+		margin: 1.25rem auto;
 	}
 
 	/* === ABOUT === */
 	#about {
-		width: 90%;
+		width: 100%;
+		padding: 1.5rem;
+		margin-bottom: 10rem;
 	}
 
 	#about h2 {
 		text-align: center;
+		width: 100%;
+		margin-top: 2rem;
 	}
 
 	#about p {
@@ -451,13 +655,26 @@ footer span {
 		float: none;
 		margin: 15px auto;
 		width: 100%;
-		font-size: 1.8em;
+		font-size: 1.60em;
+	}
+
+	#portrait {
+		margin: 2.5rem auto;
 	}
 
 	/* === PROJECTS === */
 
+	.thumb h3 {
+		font-size: 1.5em;
+		margin-bottom: 0.85rem;
+	}
+
 	#project-list p {
-		font-size: 1.0em;
+		font-size: 1.25em;
+	}
+
+	.text {
+		margin-top: -1.5rem;
 	}
 
 	/* === CONTACT === */
@@ -466,7 +683,36 @@ footer span {
 		margin: 25px auto;
 	}
 
+	form {
+		margin: 0 2rem;
+	}
+
 	#name, #email {
 		width: 100%;
+	}
+
+	/* === SOCIAL LINKS === */
+
+	#social-links p {
+		width: 33%;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 550px) {
+		/* === PROJECTS === */
+
+		.thumb h3 {
+			font-size: 1.25em;
+			margin-bottom: 0.85rem;
+		}
+
+		#project-list p {
+			font-size: 0.85em;
+		}
+
+		.text {
+			margin-top: -2.5rem;
+		}
 	}
 }

@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Nash Singh- Portfolio</title>
+		<script src="https://use.fontawesome.com/8a8aeac1d6.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -29,8 +30,9 @@
 		<section id="about">
 			<h2>About</h2>
 			<p>He’s an avid admirer of entropy, a visionary without a vision, a deep thinker with superficial thoughts, an optimistic nihilist, and a self-proclaimed philosopher who rarely leaves his comfy armchair. He worships good music on pitch-perfect audio systems and prays only to the goddess Caffeina.</p>
-
 			<p>For the past couple of years, he wanders freely in the realm of advertising and visual communication. He loves complex phrases, intricate patterns, difficult concepts, confusing abstractions, but as a rule of thumb, always constructs simple solutions to each problems he encountered. Free of any particular style, movement, dogma or perspective, nothing excites him than a problem to solve, and no challenge to him is ever hard enough.</p>
+			<div id="portrait">
+			</div>
 		</section>
 		<!-- PROJECTS SECTION -->
 		<section id="projects">
@@ -41,40 +43,46 @@
 					<!--  notifications lab -->
 					<li>
 						<div class="thumb">
-							<a href="projects/notifications/index.html"><img src="images/notifications.png" alt="notifications lab" /></a>
+							<img src="images/notifications.png" alt="notifications lab" />
 							<div class="overlay">
 								<h3>Notifications</h3>
 								<p id="firstproj" class="text">The goal of this project was to create a plugin that could be used to display notifications for various environments. It was made using jQuery, and it includes basic functions to create a blank &lt;div&gt; to overlay the page, style the notifications and then implement the messages themselves, and finally animate and display the whole component.</p>
+								<a href="projects/notifications/index.html" class="live-link"><i class="fa fa-eye link" aria-hidden="false"></i></a>
+								<a href="https://github.com/ma-singh/notifications-plugin" class="gh-link"><img src="images/gh-logo.svg" class="project-link" alt="icon to link to github repository" /></a>
 							</div>
 						</div>
 					</li>
 					<!-- weather app lab -->
 					<li>
 						<div class="thumb">
-							<a href="http://ma-singh.bitbucket.org/practical-exam/practical.html"><img src="images/weather.png" alt="weather app lab" /></a>
+							<img src="images/weather.png" alt="weather app lab" />
 							<div class="overlay">
 								<h3>Weather App</h3>
 								<p class="text">This is a pseudo-weather app that I created as a final project for a practical exam. It utilizes the <a href="https://www.wunderground.com/weather/api/" id="wapi">Weather Underground API</a> to asynchronously load and display information about the current weather conditions in my hometown and an additional location.</p>
+								<a href="projects/weatherapp/practical.html" class="live-link"><i class="fa fa-eye link" aria-hidden="false"></i></a>
+								<a href="https://github.com/ma-singh/weather-api_exam" class="gh-link"><img src="images/gh-logo.svg" class="project-link" alt="icon to link to github repository" /></a>
 							</div>
 						</div>
 					</li>
 					<!-- safari zone lab -->
-					<li>
+					<li id="safari">
 						<div class="thumb">
-							<a href="projects/safarizone/index.html"><img src="images/safarizone.png" alt="safari zone mock website" /></a>
+							<img src="images/safarizone.png" alt="safari zone mock website" />
 							<div class="overlay">
 								<h3>The Safari Zone</h3>
 								<p class="text">The Safari Zone represents my first foray into the world of HTML5 structure, CSS styling, and responsive design. We were given free reign on the theme so long as we were able to create something with structure (navigation, headings, images, text, forms) styling it appropriately, and filling it with sufficient content that we could then have the page react responsively.</p>
+								<a href="projects/safarizone/index.html" class="live-link"><i class="fa fa-eye link" aria-hidden="false"></i></a>
 							</div>
 						</div>
 					</li>
 					<!-- IUS/EID lab -->
-					<li>
+					<li id="happyhour">
 						<div class="thumb">
 							<img src="images/happyhour.png" alt="happy hour app mobile screen" />
 							<div class="overlay">
 								<h3>HappyHour</h3>
 								<p class="text">HappyHour was the result of a project where we were tasked to create mockups for an application you could see having potential use. I chose to design a social drinking application that would allow you to find either specific alcoholic beverages or popular locations serving alcohol nearby, meet up with friends, and review said beverages or locations.</p>
+								<a href="https://marvelapp.com/7f2ha7g/screen/14780811" class="live-link"><i class="fa fa-eye link" aria-hidden="false"></i></a>
 							</div>
 						</div>
 					</li>
@@ -85,6 +93,8 @@
 							<div class="overlay">
 								<h3>World of Warcraft Tool</h3>
 								<p class="text">For this project we were tasked with utilizing an existing API to accomplish a task. I took Blizzard's API for World of Warcraft to pull character and auction house data from a given realm and display what the quantity, average, and prices for a selection of items were being sold for. This was created with HTML5, JavaScript, jQuery, and CSS3.</p>
+								<a href="http://wow-tool.104.236.20.218.nip.io" class="live-link"><i class="fa fa-eye link" aria-hidden="false"></i></a>
+								<a href="https://github.com/ma-singh/WoW-API_Tool" class="gh-link"><img src="images/gh-logo.svg" class="project-link" alt="icon to link to github repository" /></a>
 							</div>
 						</div>
 					</li>
@@ -94,7 +104,9 @@
 							<img src="images/shoppingcart.png" alt="e-commerce shopping cart project" />
 							<div class="overlay">
 								<h3>interNASHional E-Commerce</h3>
-								<p class="text">interNASHional E-Commerce is an application designed to simulate a shopping cart type application that allows users to purchase comic books, with an Admin CMS to manage inventory. It uses NodeJS, Express. The Stripe API takes care of simulating payments, while PassportJS handles user authentication. MongoDB and Mongoose are used to manage the database.</p>
+								<p class="text">A simulation of a shopping cart type application that allows users to purchase comic books, with an Admin CMS to manage inventory. It uses NodeJS, Express. The Stripe API takes care of simulating payments, while PassportJS handles user authentication. MongoDB and Mongoose are used to manage the database.</p>
+								<a href="http://104.236.20.218.nip.io" class="live-link"><i class="fa fa-eye link" aria-hidden="false"></i></a>
+								<a href="https://github.com/ma-singh/interNASHional_shopping-cart" class="gh-link"><img src="images/gh-logo.svg" class="project-link" alt="icon to link to github repository" /></a>
 							</div>
 						</div>
 					</li>
