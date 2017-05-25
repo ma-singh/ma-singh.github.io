@@ -214,7 +214,11 @@ p, legend {
 	clear: both;
 }
 
+<<<<<<< HEAD
 #feedback h2 {
+=======
+#feedback h2{
+>>>>>>> 3bfa502dbaa5440fe9b4fc49305195d9bad9f1d4
 	margin-left: 0;
 }
 
