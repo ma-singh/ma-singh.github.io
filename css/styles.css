@@ -85,17 +85,16 @@ h1 {
 }
 
 #home em {
-	font-style: italic;
-	color: #888;
 	text-shadow: 1px 1px black;
 }
 
 #home a {
-	color: #fffbed;
+	color: inherit;
+	text-shadow: 1px 1px 0.5rem rgb(40, 126, 255);
 }
 
 #home a:hover {
-	color: #ddd;
+	color: rgb(40, 126, 255);
 	text-shadow: 1px 1px 0.5rem #eee;
 }
 
@@ -191,6 +190,18 @@ p, legend {
 	margin-top: -3rem;
 }
 
+.text a {
+	color: rgb(40, 126, 255);
+}
+
+.text a:hover {
+	color: #fffbed;
+}
+
+.text a:visited {
+	color: #fcb358;
+}
+
 .thumb:hover .overlay {
 	display: block;
 	opacity: 1;
@@ -201,6 +212,10 @@ p, legend {
 	width: 75%;
 	margin: 25% auto;
 	clear: both;
+}
+
+#feedback h2 {
+	margin-left: 0;
 }
 
 #feedback em {
@@ -392,6 +407,9 @@ footer span {
 		width: 70%;
 	}
 }
+
+/* ============================================== */
+/* ============================================== */
 
 @media screen and (max-width: 615px) {
 

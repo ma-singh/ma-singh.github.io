@@ -14,6 +14,54 @@ Enter the repository you just brought down into your machine
 cd ma-singh.github.io
 ```
 
+## Testing the Project
+
+While you can test your code locally with purely static files using either Mozilla Firefox or Google Chrome's browser, it's best to create a local development environment by using [Vagrant](https://www.vagrantup.com/downloads.html) and running the Ansible playbook that has been provided here.
+
+To do so, you will need Ansible, which you can do with pip, the Python package manager.
+```
+sudo easy_install pip
+```
+
+Now you can install Ansible
+```
+sudo pip install ansible
+```
+
+Now edit or create your Ansible hosts file
+```
+nano /etc/ansible/hosts
+```
+
+Add your local development server to the list of hosts
+```
+[web]
+localhost
+<IP_ADDRESS>
+```
+
+You can now run the ansible playbook
+```
+ansible-playbook nginx.yml
+```
+
+After the playbook runs, your Vagrant server should be up and running. You should be able to spin it up and switch to the directory you will clone the codebase into
+```
+cd /var/www
+```
+
+This is where you would clone the codebase to
+```
+git clone https://github.com/ma-singh/ma-singh.github.io.git
+```
+
+Now enter the directory you just created
+```
+cd ma-singh.github.io
+```
+
+With the codebase cloned into this directory, you should be able to view the project in your browser by accessing your Vagrant server.
+
 # Workflow and Development
 
 Create a development branch. Any features you develop will branch out from here.
