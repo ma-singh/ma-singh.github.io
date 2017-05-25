@@ -134,6 +134,10 @@ p, legend {
 	margin: 50px auto;
 }
 
+#projects h2 {
+	padding-top: 2rem;
+}
+
 #project-list {
 	list-style-type: none;
 	overflow: hidden;
@@ -176,6 +180,10 @@ p, legend {
 .gh-link {
 	position: absolute;
 	bottom: 1rem;
+	right: 1rem;
+}
+
+#safari .live-link, #happyhour .live-link {
 	right: 1rem;
 }
 
