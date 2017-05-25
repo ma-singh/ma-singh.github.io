@@ -1,0 +1,444 @@
+body {
+	background-image: url("../images/dark-canvas.gif");
+	margin: 0;
+	color: #fffbed;
+	font-size: 10px; 
+}
+
+/* =====================	SECTION STYLING ======================== */
+
+#home {
+	background: url("../images/safari.jpg") no-repeat center fixed;
+  	background-size: cover;
+  	height: 100vh;
+  	box-shadow: inset 0 0 0 69.4444444% rgba(0, 0, 0, 0.2);
+}
+
+#about, #extra {
+	margin: 0 auto;
+	width: 69.4444444%;
+}
+
+#gallery {
+	clear: both;
+	margin: 0 auto;
+	width: 69.7916667%; 		/* 1005px / 1440px */
+}
+
+#gallery ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+#gallery li {
+	display: inline-block;
+	width: 32.835821%;
+}
+
+#gallery img {
+	width: 100%;
+	float: left;
+	border: 1px solid #fffbed;
+}
+
+#contact {
+	clear: both;
+	margin: 0 auto;
+	width: 69.4444444%;
+}
+
+/* ========================== HEADING STYLING ========================== */
+
+h1 {
+	position: absolute;
+    text-align: center;
+    top: 33%;
+    width: 100%;
+    font: bold 8.0em 'Special Elite';
+}
+
+h2 {
+	font: 3.2em 'Special Elite';
+	text-align: center;
+	overflow: hidden;
+}
+
+h2:before, h2:after {
+    background-color: #fffbed;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h2:before {
+    right: 0.8em;
+    margin-left: -50%;
+}
+
+h2:after {
+    left: 0.8em;
+    margin-right: -50%;
+} 
+
+/* ========================== NAVIGATION STYLING ============================= */
+
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+/* nav add width */
+nav {
+	width: 100%;
+	float: right;
+	overflow: hidden;
+	background-color: #333;
+}
+
+nav > ul {
+	width: 29.1666667%;		/* 420 px / 1440 px */
+	float: right;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+nav li {
+	float: left;
+	width: 25%; 		/* 105 px */
+}
+
+nav a {
+	display: block;
+	font: 1.6em Arial;
+	text-align: center;
+	text-decoration: none;
+	color: #fffbed;
+	padding: 14px 0;		
+}
+
+nav a:hover {
+	background-color: #fffbed;
+	color: #333;
+}
+
+/* ================== SECTION TEXT STYLING ======================= */
+
+#about p {
+	font: 1.6em 'Merriweather', serif;
+	width: 30%;		/* 300px */
+	float: left;
+	margin: 3% 2% 2% 2%; /* 30px 20px 20px 20px */
+	line-height: 2;
+}
+
+#about img {
+	width: 30%;
+	border: 1px solid #fffbed;		/* ==== TO DO: CROP IMAGES PROPERLY BEFORE ASSIGNING RESPONSIVE WIDTHS */
+	float: left;
+}
+
+#extra p {
+	font: 1.2em 'Merriweather', serif;
+	width: 22.5%;		/* 225PX / 1000 */
+	float: left;
+	line-height: 2;
+	padding-right: 2.5%;		/*25PX*/
+	margin-bottom: 2%;			/*20px*/
+}
+
+/* ========================== FORM STYLING ============================= */
+
+form {
+	font: 1.6em Arial;
+	width: 100%;			/* 1000px */
+	margin: 0 auto;
+}
+
+#formInfo {
+	float: left;
+	padding-left: 7.5%;			/* 75px */
+	width: 20%;					/* 200px */
+}
+
+#formText {
+	float: right;
+	padding-right: 10%;			/* 100px */
+	width: 40%;					/* 400px */
+}
+
+#button {
+	clear: left;
+	padding-left: 12.5%;		/* 125 px */
+	padding-top: 5%;			/* 50 px */
+}
+
+input, textarea {
+	display: block;
+}
+
+#formInfo input {
+	width: 100%;
+}
+
+input[type="submit"] {
+	background-color: #fffbed;
+	color: #333;
+	font-size: 0.8em;
+	width: 10%;
+	height: 20px;
+	border: 1px solid #888;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+input[type="submit"]:hover {
+	background-color: #555;
+	color: #fffbed;
+}
+
+textarea {
+	width: 100%;		/* 400px */
+	height: 200px;
+}
+
+/* ========================= FOOTER STYLING ========================== */
+
+footer {
+	background-color: #333;
+	color: #fffbed;
+}
+
+footer ul {
+	list-style-type: none;
+	margin-bottom: 0;
+	visibility: hidden;
+}
+
+footer li {
+	font: 0.5em Arial;
+	display: inline;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+h3 {
+	font: 2.4em 'Special Elite';
+	margin: 0.6944444% 0 0 0;		/* 10px / 1000px */
+	padding: 0.6944444%;		/* 10px / 1000px */
+	text-align: right;
+}
+
+
+
+/* =========================== RESPONSIVE ============================ */
+
+@media screen and (max-width: 1208px) {
+
+	nav a:last-child {
+		padding-right: 0.5%;
+	}
+
+	#about, #extra, #contact {
+		width: 82.644628%;
+	}
+
+	#gallery {
+		width: 83.195364%;
+	}
+
+	#about p {
+		font-size: 1.6em;
+		margin: 2%;
+	}
+
+	#extra p {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 1142px) {
+
+	nav > ul {
+		width: 36.7775831%;
+	}
+
+	nav a {
+		font-size: 1.8em;
+	}
+
+	nav a:last-child {
+		padding-right: 0.5%;
+	}
+
+	#about img {
+		width: 40%;
+		margin-bottom: 5%;
+	}
+	#about p {
+		width: 55%;
+		font-size: 1.8em;
+	}
+
+	#extra p {
+		width: 100%;
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width: 982px) {
+
+	nav > ul {
+		width: 40%;
+	}
+
+	nav a:last-child {
+		padding-right: 0.5%;
+	}
+}
+
+@media screen and (max-width: 909px) {
+
+	nav > ul {
+		width: 50%;
+	}
+
+	nav a {
+		font-size: 1.5em;
+	}
+
+	nav a:last-child {
+		padding-right: 0.5%;
+	}
+
+	h1 {
+		font-size: 6.0em;
+	}
+
+	#gallery ul {
+		text-align: center;
+	}
+
+	#gallery li {
+		width: 45%;
+	}
+
+	#about p:last-child {
+		clear: left;
+		float: left;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	#about img {
+		margin-bottom: 0;
+	}
+
+	#formInfo, #formText {
+		width: 40%;
+		padding-left: 4.5%;
+	}
+
+	#formText {
+		padding-right: 0;
+		margin-right: 5%;
+	}
+
+}
+
+@media screen and (max-width: 570px) {
+
+	h1 {
+		font-size: 5.0em;
+	}
+
+	nav > ul {
+		width: 100%;
+	}
+
+	#about, #extra, #contact {
+		width: 95%;
+	}
+
+	#about img {
+		width: 80%;
+		display: block;
+		margin: 0 10.0008202%;
+
+	}
+
+	#about p {
+		clear: both;
+		float: left;
+		width: 100%;
+		margin-left: 2%;
+	}
+
+	#about p:last-child {
+		margin-left: 2%;
+	}
+
+	/* ===== gallery styling ===== */
+
+	#gallery {
+		overflow: hidden;
+	}
+
+	#gallery li:first-child {
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+
+	#gallery li {
+		float: left;
+		width: 18%;
+	}
+
+	#gallery li:nth-child(2){
+		padding-left: 4%;
+	}
+
+	#extra {
+		clear: both;
+	}
+
+	#extra h2 {
+		margin-bottom: 0;
+	}
+
+	/* ======= FORM STYLING ======= */
+
+	#formInfo, #formText {
+		width: 80%;
+		padding-left: 7.5%;
+	}
+
+	#formText {
+		clear: left;
+		float: left;
+	}
+
+	textarea {
+		height: 100px;
+	}
+
+	#button {
+		padding: 0;
+	}
+
+	input[type="submit"] {
+		width: 40%;
+		height: 40px;
+		margin: auto;
+	}
+}
